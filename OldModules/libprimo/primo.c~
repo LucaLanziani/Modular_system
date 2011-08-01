@@ -1,0 +1,49 @@
+#include "primo.h"
+
+void primo_init() {
+  PRINTA("PRIMO_INIT");
+  PRINTA("SECONDO = %d",SECONDO);
+  PRINTA("TERZO  = %d",TERZO);
+  primo_state.x=-50000;
+  primo_data.type=PRIMO;
+
+  //primo_state.data.unit=mm;
+  primo_data.value.x=primo_state.x;
+  SUB(PRIMO);  
+  /*
+   test_state.nums=(int*)malloc(sizeof(int)*3);
+   test_state.nums[0]=3;
+   test_state.nums[1]=2;
+   test_state.nums[2]=1;
+  */
+}
+ 
+void primo_run() {
+  PRINTA("PRIMO_RUN");
+  boolean result,y_v;
+  double max=10000;
+  data_t atan;
+  //atan=GET(TERZO);
+  //result=ISDATAVALID(atan);
+  
+#ifdef DEBUG
+  if (result==TRUE) {
+   PRINTE("atan2 = %f",atan.value.atan); 
+  }
+#endif
+  primo_state.x+=1;
+  primo_data.value.x=primo_state.x;
+  SETDATATIMESTAMP(&primo_data);
+  SET_S(primo_data);
+   /*
+   int i=0;
+   for(i=0;i++;i<3) {
+   	insertdata(test_state.nums[i]);
+   }
+   */
+};
+
+void primo_close() {
+  PRINTA("PRIMO_CLOSE");
+  UNSUB(PRIMO);
+}

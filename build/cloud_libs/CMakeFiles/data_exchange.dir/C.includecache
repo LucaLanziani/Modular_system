@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../cloud_libs/../shared_libs/data.h
+unistd.h
+-
+sys/time.h
+-
+time.h
+-
+
+../cloud_libs/../shared_libs/debug.h
+
+/home/mosca/Dropbox/Code/modular_system/cloud_libs/data_exchange.c
+data_exchange.h
+/home/mosca/Dropbox/Code/modular_system/cloud_libs/data_exchange.h
+
+/home/mosca/Dropbox/Code/modular_system/cloud_libs/data_exchange.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+pthread.h
+-
+data.h
+/home/mosca/Dropbox/Code/modular_system/cloud_libs/data.h
+debug.h
+/home/mosca/Dropbox/Code/modular_system/cloud_libs/debug.h
+

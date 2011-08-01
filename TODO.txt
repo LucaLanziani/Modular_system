@@ -1,0 +1,2 @@
+#ISDATAVALID confronto tra acquisizione e acquisizione+exp_time_ms
+#Script per creare il modulo onthefly:D

@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/saetta.dir/main.c.o  -o saetta -rdynamic cloud_libs/libgest_module.so shared_libs/libcommon_fncs.so cloud_libs/libdata_exchange.so cloud_libs/libgest_thread.so -lrt -ldl -lm -Wl,-rpath,/home/mosca/Dropbox/Code/modular_system/build/cloud_libs:/home/mosca/Dropbox/Code/modular_system/build/shared_libs 

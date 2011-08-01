@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libdata_exchange.so -o libdata_exchange.so CMakeFiles/data_exchange.dir/data_exchange.c.o 

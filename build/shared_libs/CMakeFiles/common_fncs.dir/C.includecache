@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mosca/Dropbox/Code/modular_system/shared_libs/common_fncs.c
+common_fncs.h
+/home/mosca/Dropbox/Code/modular_system/shared_libs/common_fncs.h
+
+/home/mosca/Dropbox/Code/modular_system/shared_libs/common_fncs.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+data.h
+/home/mosca/Dropbox/Code/modular_system/shared_libs/data.h
+debug.h
+/home/mosca/Dropbox/Code/modular_system/shared_libs/debug.h
+
+/home/mosca/Dropbox/Code/modular_system/shared_libs/data.h
+unistd.h
+-
+sys/time.h
+-
+time.h
+-
+
+/home/mosca/Dropbox/Code/modular_system/shared_libs/debug.h
+

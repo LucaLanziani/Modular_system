@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libgest_module.so -o libgest_module.so CMakeFiles/gest_module.dir/gest_module.c.o 

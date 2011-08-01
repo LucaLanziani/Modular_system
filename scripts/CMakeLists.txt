@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+FILE(GLOB SCRIPT_FILE RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.sh")
+foreach(script_file ${SCRIPT_FILE})
+		#MESSAGE(${script_file} ${CMAKE_BINARY_DIR})
+		FILE(COPY ./${script_file} DESTINATION ${CMAKE_BINARY_DIR})
+endforeach(script_file)

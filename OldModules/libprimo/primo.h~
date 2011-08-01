@@ -1,0 +1,77 @@
+#ifndef PRIMO_H
+#define	PRIMO_H
+#include <stdlib.h>
+#include <stdio.h>
+#include "module.h"
+#include "../../shared_libs/data.h"
+
+#ifdef	__cplusplus
+extern "C" {
+#endif
+
+/*
+ 
+typedef enum {
+  EMPTY=0,
+  PRIMO,
+  SECONDO,
+  TERZO
+} data_type_e;
+#define NUM_OF_DATA_TYPE 4
+  
+typedef enum {
+  m,
+  cm,
+  dm,
+  mm,
+} data_unit_e;
+
+typedef union {
+  int intero;
+  double x;
+  double y;
+  double atan;
+} data_value_u;
+
+typedef struct {
+	data_type_e type;
+	data_value_u value;
+	timespec_t timestamp;
+} data_t;
+
+typedef struct {
+	long int min;
+	long int max;
+} range_t;
+
+
+typedef struct {
+	data_type_e type;
+	data_unit_e unit;
+	range_t range;
+	long int exp_time_ms;
+	long int accuracy;
+} spec_t;
+*/
+
+typedef struct{
+	double x;
+	
+} state_t;
+
+state_t primo_state;
+spec_t primo_spec;
+data_t primo_data;
+
+typedef int primo_t;
+
+void primo_init();
+    void primo_run();
+    void primo_close();
+
+#ifdef	__cplusplus
+}
+#endif
+
+#endif	/* TEST_H */
+

@@ -1,0 +1,27 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+PROJECT(Saetta)
+
+ADD_SUBDIRECTORY(modules)
+ADD_SUBDIRECTORY(cloud_libs)
+ADD_SUBDIRECTORY(shared_libs)
+ADD_SUBDIRECTORY(scripts)
+
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/shared_libs)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/cloud_libs)
+
+
+SET(SAETTA_SRC main.c)
+SET(CLOUD_LIBS gest_module common_fncs data_exchange gest_thread)
+
+
+
+ADD_DEFINITIONS(-g -pthread -Wl,--export-dynamic)
+ADD_EXECUTABLE(saetta ${SAETTA_SRC})
+
+TARGET_LINK_LIBRARIES(saetta ${CLOUD_LIBS})
+TARGET_LINK_LIBRARIES(saetta rt dl m)
+
+FILE(COPY scripts/lm.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+FILE(COPY scripts/exec.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+

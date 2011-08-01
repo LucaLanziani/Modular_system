@@ -1,0 +1,6 @@
+CONFDIR=./conf
+MODULES_DIR=./modules
+MODULES_SUFF=.so
+MODULES_PREF=S*lib
+MODULES_ORDER_FILE=$CONFDIR/modules_order.conf
+MODULES_ORDER_FILE_TMP=$CONFDIR/modules_order_tmp.conf

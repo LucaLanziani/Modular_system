@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libcommon_fncs.so -o libcommon_fncs.so CMakeFiles/common_fncs.dir/common_fncs.c.o 

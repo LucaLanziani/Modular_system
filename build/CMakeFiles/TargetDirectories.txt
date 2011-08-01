@@ -1,0 +1,5 @@
+/home/mosca/Dropbox/Code/modular_system/build/shared_libs/CMakeFiles/common_fncs.dir
+/home/mosca/Dropbox/Code/modular_system/build/cloud_libs/CMakeFiles/data_exchange.dir
+/home/mosca/Dropbox/Code/modular_system/build/cloud_libs/CMakeFiles/gest_module.dir
+/home/mosca/Dropbox/Code/modular_system/build/cloud_libs/CMakeFiles/gest_thread.dir
+/home/mosca/Dropbox/Code/modular_system/build/CMakeFiles/saetta.dir
