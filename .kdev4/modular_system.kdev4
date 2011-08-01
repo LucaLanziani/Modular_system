@@ -1,0 +1,15 @@
+[CMake]
+BuildDirs=/home/mosca/Dropbox/Code/modular_system/build
+CMakeDir=/usr/share/cmake-2.8/Modules
+Current CMake Binary=file:///usr/bin/cmake
+CurrentBuildDir=file:///home/mosca/Dropbox/Code/modular_system/build
+CurrentInstallDir=file:///usr/local
+Extra Arguments=
+ProjectRootRelative=./
+
+[MakeBuilder]
+Default Make Environment Profile=0
+Number Of Jobs=1
+
+[Project]
+VersionControlSupport=kdevgit
